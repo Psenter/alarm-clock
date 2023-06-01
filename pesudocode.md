@@ -15,29 +15,31 @@
 **PROPERTIES**
 
 * Changes as the time changes
+* Local to the persons set time zone
 
 ### 3. Alarm/alert
 
 **PROPERTIES**
 
 * Shows alert/Makes noise
-* alert/noise only at certain times
+* alert/noise only at certain time
 
-# Functionality 
-1. Show clock on page
-2. Have clock show time
-3. Have time change on page
-4. Alarm/Alert go off at certain time
+# Procedural
+## BEGIN
+1. RENDER HTML and clock
+2. clock shows local time
+3. clock updates every 1000ms with no refresh
+## END
 
-# EXAMPLE:
-## START
+## Alert function:
 ```
-DISPLAY time
-DISPLAY change to match time
-IF (time === 5:00pm) {
-    window.alert(It's 5pm, school has ended for the day.)
-}
-ELSE {
-    DISPLAY time
-}
+ setTimeout(function () { alert("You've been staring at the clock for 10 seconds now."); }, 10000); 
 ```
+* 1000 ms is equal to 1 second
+
+# START
+1. Load HTML and CSS
+2. RENDER clock onto page
+3. Show local time
+4. Alert function (after 10 seconds)
+# END
