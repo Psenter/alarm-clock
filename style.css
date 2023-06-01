@@ -1,3 +1,7 @@
 body {
-    background-image: url("img/Purp checkers.png");
+    background-image: url("img/skyline.webp");
+}
+
+.center {
+    text-align: center;
 }
