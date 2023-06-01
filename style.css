@@ -5,3 +5,11 @@ body {
 .center {
     text-align: center;
 }
+
+.top-pad {
+    padding-top: 10%;
+}
+
+.big-txt {
+    font-size: 130px;
+}
