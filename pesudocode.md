@@ -33,7 +33,7 @@
 
 ## Alert function:
 ```
- setTimeout(function () { alert("You've been staring at the clock for 10 seconds now."); }, 10000); 
+ setTimeout(function () { alert("msg")}, time); 
 ```
 * 1000 ms is equal to 1 second
 
